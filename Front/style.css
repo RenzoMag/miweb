@@ -1,0 +1,145 @@
+@font-face {
+  font-family: "rl";
+  src: url(Fonts/Raleway-Light.ttf);
+}
+
+@font-face {
+  font-family: "rb";
+  src: url(Fonts/Raleway-Bold.ttf);
+}
+
+* {
+  font-family: "rl";
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  font-family: "rs";
+  scroll-behavior: smooth;
+}
+
+.inicio {
+  display: flex;
+  flex-direction: column;
+  background-color: #252934;
+  color: white;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  font-size: 32pt;
+  line-height: 36pt;
+  text-align: center;
+}
+
+.btnstart {
+  color: white;
+  background-color: #252934;
+  border: 2px solid #fff;
+  font-size: 13pt;
+  padding: 1px 20px 1px 20px;
+  margin-top: 20px;
+  transition: all 0.5s;
+  border-radius: 10px;
+}
+
+.btnstart:hover {
+  color: #252934;
+  background-color: #00ffff;
+  box-shadow: 0px 0px 25px #4bffff;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  font-size: 15pt;
+  font-weight: 900;
+}
+
+#ab {
+  width: 100%;
+  height: 100%;
+}
+
+.about {
+  background-color: white;
+  color: #424242;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.caract {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 0px 50px 0px;
+  font-size: 22pt;
+  width: 700px;
+  height: 300px;
+}
+
+#icons {
+  position: relative;
+  top: 8.7rem;
+  font-size: 65px;
+  color: white;
+}
+
+#hexa {
+  font-size: 210px;
+  color: #28c2c8;
+}
+
+#texto {
+  position: relative;
+  bottom: 0.5rem;
+  font-size: 13pt;
+  color: #747474;
+  font-weight: 600;
+}
+
+#titu {
+  position: relative;
+  bottom: 1rem;
+  font-weight: 900;
+}
+
+.titulos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+  font-family: "rb";
+  font-size: 30pt;
+  color: #444649;
+  font-weight: 100;
+  flex-direction: column;
+}
+
+.barra {
+  margin: 15px 0 30px 0;
+  height: 4px;
+  width: 70px;
+  background-color: #444649;
+}
+
+.about2{
+display: flex;
+width: 100%;
+flex-direction: row;
+}
+
+.me{
+  display: flex;
+  width: 50%;
+  justify-content: center;
+}
+
+.specs{
+  display: flex;
+  width: 50%;
+}
