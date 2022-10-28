@@ -141,6 +141,7 @@ body {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  margin-left: 30px;
 }
 
 #qs{
@@ -168,6 +169,7 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  margin-right: 30px;
 }
 
 .niv{
@@ -177,17 +179,77 @@ body {
 }
 
 .niv div{
-  margin: 0px 60px 0px 60px;
+  margin: 0px 40px 0px 40px;
+  display: flex;
+  flex-direction: row;
 }
 
 .len{
   text-align: center;
   justify-content: center;
+  color: #fff;
+  font-weight: 500;
 }
 
 .len div{
   width: 650px;
   height: 25px;
-  background-color: rgb(255, 211, 211);
   margin: 40px 0px 40px 0px;
+}
+
+.niv span{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.niv div:nth-child(1){
+  color: #5fd8a6;
+}
+
+.niv div:nth-child(2){
+  color: #00663f;
+}
+
+.niv div:nth-child(3){
+  color: #4EC3E0;
+}
+
+.niv div:nth-child(4){
+  color: #F4364C;
+}
+
+.material-symbols-rounded {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+.len div:nth-child(1){
+  background-color: #00663f;
+}
+
+.len div:nth-child(2){
+  background-color: #00663f;
+}
+
+.len div:nth-child(3){
+  background-color: #5fd8a6;
+}
+
+.len div:nth-child(4){
+  background-color: #4EC3E0;
+}
+
+.len div:nth-child(5){
+  background-color: #5fd8a6;
+}
+
+.len div:nth-child(6){
+  background-color: #5fd8a6;
+}
+
+.len div:nth-child(7){
+  background-color: #5fd8a6;
 }
