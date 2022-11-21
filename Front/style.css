@@ -8,6 +8,11 @@
   src: url(Fonts/Raleway-Bold.ttf);
 }
 
+@font-face {
+  font-family: "po";
+  src: url(Fonts/Poppins-Light.ttf);
+}
+
 * {
   font-family: "rl";
   box-sizing: border-box  ;
@@ -298,7 +303,7 @@ body {
 #ex{
   width: 100%;
   height: 100%;
-  background-color: #F1F1F1;
+  background-color: #e7e7e7;
 }
 
 .experiencia{
@@ -310,7 +315,7 @@ body {
 
 #bar2{
   width: 40px;
-  height: 8.5px;
+  min-height: 8.5px;
   margin-bottom: 0;
   border-radius: 0;
 }
@@ -325,20 +330,21 @@ body {
 
 .carteles{
   display: flex;
-  height: 40px;
+  min-height: 40px;
   width: 150px;
   text-align: center;
   align-items: center;
   justify-content: center;
-  color: black;
+  color: rgb(31, 31, 31);
   font-weight: 600;
   border-radius: 50px;
-  background: linear-gradient(145deg, #8ae3e8, #74bfc3);
-  box-shadow:  5px 5px 15px #477577,
-               -5px -5px 15px #bbffff;
+  background: #81d4d9;
+  box-shadow:  7px 7px 15px #67aaae,
+               -7px -7px 15px #9bfeff;
   margin-top: 200px;
   cursor: pointer;
   transition: 0.5s;
+  margin-bottom: 0px;
 }
 
 #bb{
@@ -348,21 +354,43 @@ body {
 }
 
 .activado{
+  z-index: 2;
   border-radius: 0px;
   background: #81d4d9;
-  box-shadow: inset 5px 5px 15px #477577,
-              inset -5px -5px 15px #bbffff;
+  box-shadow: inset 5px 5px 10px #67aaae,
+              inset -5px -5px 10px #9bfeff;
   width: 200px;
   transition: 0.5s;
 }
 
 .oculto{
-  display: none;
+  display: none !important;
 }
 
 .cartelact{
+  display: flex;
+  z-index: 1;
   border-radius: 0px;
-  background: #ffffff;
-  box-shadow: inset 20px 20px 40px #bfbfbf,
-              inset -20px -20px 40px #ffffff;
+  background: linear-gradient(315deg, #e6e6e6, #ffffff);
+  box-shadow:  -7px -7px 9px #d9d9d9,
+               7px 7px 9px #ffffff;
+  padding: 10px;
+  text-align: start;
+  justify-content: center;
+  align-items: center;
+  font-size: 17px;
+  font-family: "po";
+  color: #6d6d6d;
+}
+
+a:hover{
+  color: #81d4d9 !important;
+  border-bottom: 1px dashed #81d4d9 !important;
+
+}
+
+a, a:link, a:visited {
+  text-decoration: none;
+  color: #6d6d6d;
+  border-bottom: 1px dashed #6d6d6d;
 }
