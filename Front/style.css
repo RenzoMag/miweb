@@ -347,9 +347,10 @@ body {
   margin-bottom: 0px;
 }
 
-#bb{
+.contc{
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 200px;
 }
 
@@ -393,4 +394,12 @@ a, a:link, a:visited {
   text-decoration: none;
   color: #6d6d6d;
   border-bottom: 1px dashed #6d6d6d;
+}
+
+#arc{
+  margin-top: 350px;
+}
+
+#pyc{
+  margin-top: 300px;
 }
