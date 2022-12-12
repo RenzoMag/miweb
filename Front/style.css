@@ -67,7 +67,7 @@ body {
 
 #ab {
   width: 100%;
-  height: 1250px;
+  height: auto;
 }
 
 .about {
@@ -122,7 +122,7 @@ body {
 .titulos {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   padding-top: 50px;
   font-family: "rb";
   font-size: 30pt;
@@ -143,6 +143,7 @@ body {
   display: flex;
   width: 100%;
   flex-direction: row;
+  margin-bottom: 100px;
 }
 
 .me{
@@ -302,13 +303,13 @@ body {
 
 #ex{
   width: 100%;
-  height: 100%;
+  min-height: 100%;
+  height: auto;
   background-color: #e7e7e7;
 }
 
 .experiencia{
   display: flex;
-  height: 100%;
   justify-content: center;
   flex-direction: row;
 }
@@ -321,11 +322,11 @@ body {
 }
 
 #linea{
-  display: flex;
   background-color: rgb(40 194 200);
   width: 40px;
-  height: 600px;
+  height: 100%;
   border-radius: 0 0 25px 25px;
+  margin-bottom: 25px;
 }
 
 .carteles{
@@ -365,7 +366,9 @@ body {
 }
 
 .oculto{
-  display: none !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  display: flex !important;
 }
 
 .cartelact{
@@ -382,6 +385,10 @@ body {
   font-size: 17px;
   font-family: "po";
   color: #6d6d6d;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.7s linear;
+  display: none;
 }
 
 a:hover{
@@ -397,9 +404,18 @@ a, a:link, a:visited {
 }
 
 #arc{
-  margin-top: 350px;
+  margin-top: 370px;
 }
 
 #pyc{
   margin-top: 300px;
+  margin-bottom: 25px;
+}
+
+.pyccc{
+    margin-bottom: 0px !important;
+}
+
+#pycc{
+  margin-bottom: 25px;
 }
