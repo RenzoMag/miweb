@@ -322,11 +322,12 @@ body {
 }
 
 #linea{
-  background-color: rgb(40 194 200);
+  background-color: #28c2c8;
   width: 40px;
   height: 100%;
   border-radius: 0 0 25px 25px;
   margin-bottom: 25px;
+  z-index: 2;
 }
 
 .carteles{
@@ -342,7 +343,6 @@ body {
   background: #81d4d9;
   box-shadow:  7px 7px 15px #67aaae,
                -7px -7px 15px #9bfeff;
-  margin-top: 200px;
   cursor: pointer;
   transition: 0.5s;
   margin-bottom: 0px;
@@ -357,7 +357,7 @@ body {
 
 .activado{
   z-index: 2;
-  border-radius: 0px;
+  border-radius: 12px 12px 0 0;
   background: #81d4d9;
   box-shadow: inset 5px 5px 10px #67aaae,
               inset -5px -5px 10px #9bfeff;
@@ -394,7 +394,8 @@ body {
 a:hover{
   color: #81d4d9 !important;
   border-bottom: 1px dashed #81d4d9 !important;
-
+  transition: all 0.3s;
+  font-weight: 900;
 }
 
 a, a:link, a:visited {
@@ -403,19 +404,73 @@ a, a:link, a:visited {
   border-bottom: 1px dashed #6d6d6d;
 }
 
+.adms{
+  border: none;
+  font-size: 17px;
+  color: #6d6d6d;
+  text-decoration: underline;
+  position: relative;
+  right: 5px;
+}
+
+.adms:hover{
+  color: #81d4d9;
+  transition: all 0.5s;
+  font-weight: 900;
+}
+
+.admscart{
+  background-color: #e0e0e0;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.75);
+  border: 1px solid #000000 ;
+  position: relative;
+  bottom: 315px;
+  left: 180px;
+  z-index: 1;
+  padding: 10px;
+  color: rgb(48, 48, 48);
+  opacity: 0;
+  border-radius: 6px;
+  transition: all 0.2s;
+}
+.triang{
+  position: relative;
+  bottom: 75px;
+  right: 181px;
+  rotate: -90deg;
+  padding: 0px;
+}
+
+.admscarton {
+  opacity: 1 !important;
+}
+
+#mic{
+  margin-top: 200px;
+}
+
 #arc{
-  margin-top: 370px;
+  margin-top: 200px;
 }
 
 #pyc{
-  margin-top: 300px;
+  margin-top: 200px;
+}
+
+#qbas{
+  margin-top: 200px;
+}
+
+#qbass{
   margin-bottom: 25px;
 }
 
-.pyccc{
-    margin-bottom: 0px !important;
-}
-
-#pycc{
-  margin-bottom: 25px;
+.triangl1{
+  color: #28c2c8;
+  position: relative;
+  bottom: 500px;
+  right: 28px;
+  rotate: -90deg;
+  z-index: 0;
+  font-size: 100px;
 }

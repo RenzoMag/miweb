@@ -12,7 +12,6 @@ cartel.addEventListener("click", () =>{
 cartel1.addEventListener("click", () =>{
     cartel1.classList.toggle("activado");
     cont1.classList.toggle("oculto");
-    cartel1.classList.toggle("pyccc");
 });
 
     const cartel2 = document.getElementById('arc');
@@ -22,3 +21,22 @@ cartel2.addEventListener("click", () =>{
     cartel2.classList.toggle("activado");
     cont2.classList.toggle("oculto");
 });
+
+const cartel3 = document.getElementById('qbas');
+const cont3 = document.getElementById('qbass');
+
+cartel3.addEventListener("click", () =>{
+cartel3.classList.toggle("activado");
+cont3.classList.toggle("oculto");
+});
+
+const proyecto = document.getElementsByClassName('adms');
+const proyecto2 = document.getElementsByClassName('admscart');
+
+proyecto[0].onmouseover= function(){
+    proyecto2[0].classList.add("admscarton")
+};
+
+proyecto[0].onmouseout= function(){
+    proyecto2[0].classList.remove("admscarton")
+};
