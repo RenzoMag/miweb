@@ -15,7 +15,11 @@
 
 * {
   font-family: "rl";
-  box-sizing: border-box  ;
+  box-sizing: border-box;
+  -webkit-user-select: none;/* Chrome  y Safari */ 
+  -moz-user-select: none;/* Firefox */
+   -ms-user-select: none;/* IE 10+ */ 
+       user-select: none;
 }
 
 html,
@@ -327,7 +331,16 @@ body {
   height: 100%;
   border-radius: 0 0 25px 25px;
   margin-bottom: 25px;
-  z-index: 2;
+  z-index: 1;
+  transition: 1s all;
+}
+
+.lineapri{
+  height: 85px !important;
+}
+
+.lineasec{
+  height: 325px !important;
 }
 
 .carteles{
@@ -366,8 +379,6 @@ body {
 }
 
 .oculto{
-  visibility: visible !important;
-  opacity: 1 !important;
   display: flex !important;
 }
 
@@ -385,9 +396,6 @@ body {
   font-size: 17px;
   font-family: "po";
   color: #6d6d6d;
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0s, opacity 0.7s linear;
   display: none;
 }
 
@@ -426,7 +434,7 @@ a, a:link, a:visited {
   position: relative;
   bottom: 315px;
   left: 180px;
-  z-index: 1;
+  z-index: 3;
   padding: 10px;
   color: rgb(48, 48, 48);
   opacity: 0;
@@ -445,32 +453,10 @@ a, a:link, a:visited {
   opacity: 1 !important;
 }
 
-#mic{
-  margin-top: 200px;
-}
-
-#arc{
-  margin-top: 200px;
-}
-
-#pyc{
-  margin-top: 200px;
-}
-
-#qbas{
+#mic, #arc, #pyc, #qbas{
   margin-top: 200px;
 }
 
 #qbass{
   margin-bottom: 25px;
-}
-
-.triangl1{
-  color: #28c2c8;
-  position: relative;
-  bottom: 500px;
-  right: 28px;
-  rotate: -90deg;
-  z-index: 0;
-  font-size: 100px;
 }
