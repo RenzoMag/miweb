@@ -79,3 +79,4 @@ proyecto[0].onmouseout= function(){
     proyecto2[0].classList.remove("admscarton")
 };
 
+

@@ -538,3 +538,53 @@ a, a:link, a:visited {
   position: relative;
   top: 0px;
 }
+
+.modal{
+  position: fixed;
+  display: flex !important;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #111111bd;
+}
+
+.modal__cointainer{
+  width: 90%;
+  background-color: white;
+  margin: auto;
+  max-width: 480px;
+  max-height: 90%;
+  border-radius: 20px 20px 6px 6px;
+  box-shadow: 15px 15px 70px rgba(255, 255, 255, 0.247);
+}
+
+.modal__cointainer img{
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+  box-shadow: 5px 5px 40px rgba(0, 0, 0, 0.445);
+}
+
+.modal__cointainer h2{
+  margin: 45px 0 25px 30px;
+  font-family: "po";
+  text-decoration: underline rgba(0, 0, 0, 0.486);
+}
+
+.modal__cointainer h2 a{
+  border-bottom: none !important;
+}
+
+.modal__cointainer p{
+  margin: 5px 30px 25px 30px;
+  text-align: justify;
+  font-family: "rl";
+}
+
+.modal__cointainer_x{
+  cursor: pointer;
+  color: white;
+  position: relative;
+  bottom: 475px;
+  left: 440px;
+}
