@@ -133,6 +133,7 @@ body {
   color: #444649;
   font-weight: 100;
   flex-direction: column;
+  text-align: center;
 }
 
 .barra {
@@ -466,9 +467,27 @@ a, a:link, a:visited {
 
 #ex{
   width: 100%;
-  min-height: 100%;
+  min-height: 130%;
   height: auto;
   background-color: white;
+}
+
+@media screen and (max-width: 1377px){
+  #ex{
+    min-height: 160%;
+  }
+}
+
+@media screen and (max-width: 1037px){
+  #ex{
+    min-height: 190%;
+  }
+}
+
+@media screen and (max-width: 696px){
+  #ex{
+    min-height: 2400px;
+  }
 }
 
 .contwork{
@@ -547,6 +566,9 @@ a, a:link, a:visited {
   left: 0;
   right: 0;
   background-color: #111111bd;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 400ms;
 }
 
 .modal__cointainer{
@@ -557,6 +579,8 @@ a, a:link, a:visited {
   max-height: 90%;
   border-radius: 20px 20px 6px 6px;
   box-shadow: 15px 15px 70px rgba(255, 255, 255, 0.247);
+  position: relative;
+  bottom: 800px;
 }
 
 .modal__cointainer img{
@@ -568,7 +592,7 @@ a, a:link, a:visited {
 .modal__cointainer h2{
   margin: 45px 0 25px 30px;
   font-family: "po";
-  text-decoration: underline rgba(0, 0, 0, 0.486);
+  text-decoration: underline 1px rgba(0, 0, 0, 0.486);
 }
 
 .modal__cointainer h2 a{
@@ -587,4 +611,101 @@ a, a:link, a:visited {
   position: relative;
   bottom: 475px;
   left: 440px;
+}
+
+.modal__cointainer_close{
+  opacity: 1 !important;
+  pointer-events: unset !important;
+  transition: opacity 400ms;
+}
+
+#shapecont{
+  position: relative;
+}
+
+.custom-shape-divider-bottom-1672598902 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-bottom-1672598902 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 115px;
+}
+
+.custom-shape-divider-bottom-1672598902 .shape-fill {
+  fill: #252934;
+}
+
+#cont{
+  width: 100%;
+  min-height: 50%;
+  height: auto;
+  background-color: #252934;
+  flex-direction: column;
+}
+
+#cont .titulos{
+  color: white;
+}
+
+#cont .barra{
+  background-color: white;
+}
+
+.gg-mail, .gg-instagram {
+  color: white;
+  --ggs: 3;
+}
+
+.gg-instagram{
+  --ggs: 2;
+}
+
+.contico{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.icocont{
+  border-radius: 13px;
+  background: #252934;
+  box-shadow: inset 8px 8px 10px #1a1d24,
+              inset -8px -8px 10px #303544;
+  width: 80px;
+  height: 80px;
+  margin: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ico{
+  border-radius: 13px;
+  background: #252934;
+  box-shadow:  8px 8px 10px #1a1d24;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  bottom: 0;
+  transition: bottom 500ms;
+  border: 1px solid #21242e;
+}
+
+.ico:hover{
+  position: relative;
+  bottom: 26px;
+  transition: bottom 500ms;
 }

@@ -73,6 +73,7 @@ const proyecto2 = document.getElementsByClassName('admscart');
 
 proyecto[0].onmouseover= function(){
     proyecto2[0].classList.add("admscarton")
+    console.log("aaa")
 };
 
 proyecto[0].onmouseout= function(){
@@ -80,3 +81,28 @@ proyecto[0].onmouseout= function(){
 };
 
 
+const modalx = document.getElementsByClassName("modal__cointainer_x");
+const modalcont = document.getElementsByClassName("modal");
+const workbtn = document.getElementsByClassName("workbtn"); 
+
+modalx[0].addEventListener("click", () =>{
+    modalcont[0].classList.remove("modal__cointainer_close");
+    document.getElementsByTagName("body")[0].style = "overflow: visible;"
+    document.getElementsByClassName("modal__cointainer")[0].style = "position: relative; bottom: 800px; transition: bottom 350ms;"
+});
+
+for (i = 0; i < workbtn.length; i++) {
+    workbtn[i].addEventListener("click", () =>{
+        modalcont[0].classList.add("modal__cointainer_close");
+        document.getElementsByTagName("body")[0].style = "overflow: hidden;"
+        document.getElementsByClassName("modal__cointainer")[0].style = "position: relative; bottom: 0px; transition: bottom 450ms;"
+    });
+}
+
+document.getElementsByClassName("ico")[0].addEventListener("click", () =>{
+    window.open('mailto:renzomagnoni203@gmail.com');
+});
+
+document.getElementsByClassName("ico")[1].addEventListener("click", () =>{
+    window.open('http://www.instagram.com/renzomag', '_blank');
+});
